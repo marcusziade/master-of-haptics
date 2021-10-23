@@ -45,6 +45,10 @@ struct HapticShowroomView: View {
             } header: {
                 Text("Notifications")
             }
+
+            Link("Human Interface Guidelines - Haptics",
+                 destination: URL(string: "https://developer.apple.com/design/human-interface-guidelines/ios/user-interaction/haptics/")!
+            )
         }
     }
 }
