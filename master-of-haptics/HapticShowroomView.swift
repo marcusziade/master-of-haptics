@@ -1,5 +1,5 @@
 //
-//  ContentView.swift
+//  HapticShowroomView.swift
 //  master-of-haptics
 //
 //  Created by Marcus Ziadé on 23.10.2021.
