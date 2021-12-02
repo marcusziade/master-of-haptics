@@ -7,45 +7,46 @@
 
 import SwiftUI
 
-struct HapticShowroomView: View {
-
-    @State private var impactIntensity: Float = 0.5
-
+struct HapticsShowroomView: View {
+    
+    @State private var impactIntensity: Float = 1.0
+    
     var body: some View {
         List {
-            Section {
-                Button { UISelectionFeedbackGenerator().selectionChanged() } label: {
-                    Text("Selection").foregroundColor(.primary)
+            Section("Selection haptic") {
+                Button {
+                    UISelectionFeedbackGenerator().selectionChanged()
+                } label: {
+                    Text("Selection")
+                        .foregroundColor(.primary)
                 }
-            } header: {
-                Text("Selection")
             }
-
-            Section {
-                Slider(value: $impactIntensity, in: 0...1)
-                Label(String(impactIntensity), systemImage: "bolt.circle.fill")
-
-                ForEach(UIImpactFeedbackGenerator.FeedbackStyle.allCases, id: \.self) { style in
+            
+            Section("Impact haptics") {
+                HapticIntensityView(impactIntensity: $impactIntensity)
+                
+                ForEach(UIImpactFeedbackGenerator.FeedbackStyle.allCases) { style in
                     Button {
                         UIImpactFeedbackGenerator(style: style).impactOccurred(intensity: CGFloat(impactIntensity))
                     } label: {
-                        Text(style.title).foregroundColor(.primary).fontWeight(style.font)
+                        Text(style.title)
+                            .foregroundColor(.primary)
+                            .fontWeight(style.font)
                     }
                 }
-            } header: {
-                Text("Impact")
             }
-
-            Section {
-                ForEach(UINotificationFeedbackGenerator.FeedbackType.allCases, id: \.self) { style in
-                    Button { UINotificationFeedbackGenerator().notificationOccurred(style) } label: {
-                        Text(style.title).foregroundColor(style.color)
+            
+            Section("Notification haptics") {
+                ForEach(UINotificationFeedbackGenerator.FeedbackType.allCases) { type in
+                    Button {
+                        UINotificationFeedbackGenerator().notificationOccurred(type)
+                    } label: {
+                        Text(type.title)
+                            .foregroundColor(type.color)
                     }
                 }
-            } header: {
-                Text("Notifications")
             }
-
+            
             Link("Human Interface Guidelines - Haptics",
                  destination: URL(string: "https://developer.apple.com/design/human-interface-guidelines/ios/user-interaction/haptics/")!
             )
@@ -55,7 +56,13 @@ struct HapticShowroomView: View {
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
-        HapticShowroomView()
-            .preferredColorScheme(.dark)
+        Group {
+            HapticsShowroomView()
+                .previewDevice("iPod touch (7th generation)")
+            HapticsShowroomView()
+                .previewDevice("iPhone 8")
+            HapticsShowroomView()
+                .previewDevice("iPhone 13 Pro Max")
+        }
     }
 }

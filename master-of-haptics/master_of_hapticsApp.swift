@@ -11,7 +11,7 @@ import SwiftUI
 struct master_of_hapticsApp: App {
     var body: some Scene {
         WindowGroup {
-            HapticShowroomView()
+            HapticsShowroomView()
         }
     }
 }

@@ -10,13 +10,17 @@ import UIKit
 
 // MARK: - UIImpactFeedbackGenerator
 
-extension UIImpactFeedbackGenerator.FeedbackStyle: CaseIterable {
-
+extension UIImpactFeedbackGenerator.FeedbackStyle: CaseIterable, Identifiable {
+    
+    public var id: Int {
+        rawValue
+    }
+    
     public static var allCases: [UIImpactFeedbackGenerator.FeedbackStyle] {
         [.light, .medium, .heavy, .rigid, .soft]
     }
-
-    var title: String {
+    
+    public var title: String {
         switch self {
         case .light: return "Light"
         case .medium: return "Medium"
@@ -26,8 +30,8 @@ extension UIImpactFeedbackGenerator.FeedbackStyle: CaseIterable {
         @unknown default: return "Unknown"
         }
     }
-
-    var font: Font.Weight {
+    
+    public var font: Font.Weight {
         switch self {
         case .light: return .light
         case .medium: return .medium
@@ -39,13 +43,19 @@ extension UIImpactFeedbackGenerator.FeedbackStyle: CaseIterable {
     }
 }
 
-extension UINotificationFeedbackGenerator.FeedbackType: CaseIterable {
+// MARK: - UINotificationFeedbackGenerator
 
+extension UINotificationFeedbackGenerator.FeedbackType: CaseIterable, Identifiable {
+    
+    public var id: Int {
+        rawValue
+    }
+    
     public static var allCases: [UINotificationFeedbackGenerator.FeedbackType] {
         [.success, .warning, .error]
     }
-
-    var title: String {
+    
+    public var title: String {
         switch self {
         case .success: return "Success"
         case .warning: return "Warning"
@@ -53,8 +63,8 @@ extension UINotificationFeedbackGenerator.FeedbackType: CaseIterable {
         @unknown default: return "Unknown"
         }
     }
-
-    var color: Color {
+    
+    public var color: SwiftUI.Color {
         switch self {
         case .success: return .green
         case .warning: return .yellow

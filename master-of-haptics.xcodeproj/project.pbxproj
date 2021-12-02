@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5A4B559B2758BB1B00DBEFF6 /* HapticIntensityView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A4B559A2758BB1B00DBEFF6 /* HapticIntensityView.swift */; };
 		5A86E6852723FAA90043BD09 /* master_of_hapticsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A86E6842723FAA90043BD09 /* master_of_hapticsApp.swift */; };
 		5A86E6872723FAA90043BD09 /* HapticShowroomView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A86E6862723FAA90043BD09 /* HapticShowroomView.swift */; };
 		5A86E6892723FAAE0043BD09 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5A86E6882723FAAE0043BD09 /* Assets.xcassets */; };
@@ -15,6 +16,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		5A4B559A2758BB1B00DBEFF6 /* HapticIntensityView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HapticIntensityView.swift; sourceTree = "<group>"; };
 		5A86E6812723FAA90043BD09 /* master-of-haptics.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "master-of-haptics.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		5A86E6842723FAA90043BD09 /* master_of_hapticsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = master_of_hapticsApp.swift; sourceTree = "<group>"; };
 		5A86E6862723FAA90043BD09 /* HapticShowroomView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HapticShowroomView.swift; sourceTree = "<group>"; };
@@ -55,6 +57,7 @@
 			children = (
 				5A86E6842723FAA90043BD09 /* master_of_hapticsApp.swift */,
 				5A86E6862723FAA90043BD09 /* HapticShowroomView.swift */,
+				5A4B559A2758BB1B00DBEFF6 /* HapticIntensityView.swift */,
 				5A86E692272401E40043BD09 /* Haptics+Ext.swift */,
 				5A86E6882723FAAE0043BD09 /* Assets.xcassets */,
 				5A86E68A2723FAAE0043BD09 /* Preview Content */,
@@ -143,6 +146,7 @@
 				5A86E6872723FAA90043BD09 /* HapticShowroomView.swift in Sources */,
 				5A86E6852723FAA90043BD09 /* master_of_hapticsApp.swift in Sources */,
 				5A86E693272401E40043BD09 /* Haptics+Ext.swift in Sources */,
+				5A4B559B2758BB1B00DBEFF6 /* HapticIntensityView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -200,7 +204,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -255,7 +259,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -281,7 +285,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -311,7 +315,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
