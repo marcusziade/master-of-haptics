@@ -1,5 +1,5 @@
 //
-//  HapticShowroomView.swift
+//  HapticsShowroomView.swift
 //  master-of-haptics
 //
 //  Created by Marcus Ziadé on 23.10.2021.
@@ -54,7 +54,7 @@ struct HapticsShowroomView: View {
     }
 }
 
-struct ContentView_Previews: PreviewProvider {
+struct HapticsShowroomView_Previews: PreviewProvider {
     static var previews: some View {
         Group {
             HapticsShowroomView()

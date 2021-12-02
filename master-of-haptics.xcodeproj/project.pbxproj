@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		5A4B559B2758BB1B00DBEFF6 /* HapticIntensityView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A4B559A2758BB1B00DBEFF6 /* HapticIntensityView.swift */; };
 		5A86E6852723FAA90043BD09 /* master_of_hapticsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A86E6842723FAA90043BD09 /* master_of_hapticsApp.swift */; };
-		5A86E6872723FAA90043BD09 /* HapticShowroomView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A86E6862723FAA90043BD09 /* HapticShowroomView.swift */; };
+		5A86E6872723FAA90043BD09 /* HapticsShowroomView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A86E6862723FAA90043BD09 /* HapticsShowroomView.swift */; };
 		5A86E6892723FAAE0043BD09 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5A86E6882723FAAE0043BD09 /* Assets.xcassets */; };
 		5A86E68C2723FAAE0043BD09 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5A86E68B2723FAAE0043BD09 /* Preview Assets.xcassets */; };
 		5A86E693272401E40043BD09 /* Haptics+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A86E692272401E40043BD09 /* Haptics+Ext.swift */; };
@@ -19,7 +19,7 @@
 		5A4B559A2758BB1B00DBEFF6 /* HapticIntensityView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HapticIntensityView.swift; sourceTree = "<group>"; };
 		5A86E6812723FAA90043BD09 /* master-of-haptics.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "master-of-haptics.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		5A86E6842723FAA90043BD09 /* master_of_hapticsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = master_of_hapticsApp.swift; sourceTree = "<group>"; };
-		5A86E6862723FAA90043BD09 /* HapticShowroomView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HapticShowroomView.swift; sourceTree = "<group>"; };
+		5A86E6862723FAA90043BD09 /* HapticsShowroomView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HapticsShowroomView.swift; sourceTree = "<group>"; };
 		5A86E6882723FAAE0043BD09 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5A86E68B2723FAAE0043BD09 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		5A86E692272401E40043BD09 /* Haptics+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Haptics+Ext.swift"; sourceTree = "<group>"; };
@@ -56,7 +56,7 @@
 			isa = PBXGroup;
 			children = (
 				5A86E6842723FAA90043BD09 /* master_of_hapticsApp.swift */,
-				5A86E6862723FAA90043BD09 /* HapticShowroomView.swift */,
+				5A86E6862723FAA90043BD09 /* HapticsShowroomView.swift */,
 				5A4B559A2758BB1B00DBEFF6 /* HapticIntensityView.swift */,
 				5A86E692272401E40043BD09 /* Haptics+Ext.swift */,
 				5A86E6882723FAAE0043BD09 /* Assets.xcassets */,
@@ -143,7 +143,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5A86E6872723FAA90043BD09 /* HapticShowroomView.swift in Sources */,
+				5A86E6872723FAA90043BD09 /* HapticsShowroomView.swift in Sources */,
 				5A86E6852723FAA90043BD09 /* master_of_hapticsApp.swift in Sources */,
 				5A86E693272401E40043BD09 /* Haptics+Ext.swift in Sources */,
 				5A4B559B2758BB1B00DBEFF6 /* HapticIntensityView.swift in Sources */,
