@@ -1,25 +1,18 @@
-//
-//  Haptics+Ext.swift
-//  master-of-haptics
-//
-//  Created by Marcus Ziadé on 23.10.2021.
-//
-
 import SwiftUI
 import UIKit
 
 // MARK: - UIImpactFeedbackGenerator
 
 extension UIImpactFeedbackGenerator.FeedbackStyle: CaseIterable, Identifiable {
-    
+
     public var id: Int {
         rawValue
     }
-    
+
     public static var allCases: [UIImpactFeedbackGenerator.FeedbackStyle] {
         [.light, .medium, .heavy, .rigid, .soft]
     }
-    
+
     public var title: String {
         switch self {
         case .light: return "Light"
@@ -30,7 +23,7 @@ extension UIImpactFeedbackGenerator.FeedbackStyle: CaseIterable, Identifiable {
         @unknown default: return "Unknown"
         }
     }
-    
+
     public var font: Font.Weight {
         switch self {
         case .light: return .light
@@ -46,15 +39,15 @@ extension UIImpactFeedbackGenerator.FeedbackStyle: CaseIterable, Identifiable {
 // MARK: - UINotificationFeedbackGenerator
 
 extension UINotificationFeedbackGenerator.FeedbackType: CaseIterable, Identifiable {
-    
+
     public var id: Int {
         rawValue
     }
-    
+
     public static var allCases: [UINotificationFeedbackGenerator.FeedbackType] {
         [.success, .warning, .error]
     }
-    
+
     public var title: String {
         switch self {
         case .success: return "Success"
@@ -63,7 +56,7 @@ extension UINotificationFeedbackGenerator.FeedbackType: CaseIterable, Identifiab
         @unknown default: return "Unknown"
         }
     }
-    
+
     public var color: SwiftUI.Color {
         switch self {
         case .success: return .green
@@ -73,3 +66,5 @@ extension UINotificationFeedbackGenerator.FeedbackType: CaseIterable, Identifiab
         }
     }
 }
+
+

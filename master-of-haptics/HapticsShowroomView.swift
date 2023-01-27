@@ -1,16 +1,9 @@
-//
-//  HapticsShowroomView.swift
-//  master-of-haptics
-//
-//  Created by Marcus Ziadé on 23.10.2021.
-//
-
 import SwiftUI
 
 struct HapticsShowroomView: View {
-    
+
     @State private var impactIntensity: Float = 1.0
-    
+
     var body: some View {
         List {
             Section("Selection haptic") {
@@ -21,13 +14,16 @@ struct HapticsShowroomView: View {
                         .foregroundColor(.primary)
                 }
             }
-            
+
             Section("Impact haptics") {
                 HapticIntensityView(impactIntensity: $impactIntensity)
-                
+
                 ForEach(UIImpactFeedbackGenerator.FeedbackStyle.allCases) { style in
                     Button {
-                        UIImpactFeedbackGenerator(style: style).impactOccurred(intensity: CGFloat(impactIntensity))
+                        UIImpactFeedbackGenerator(style: style)
+                            .impactOccurred(
+                                intensity: CGFloat(impactIntensity)
+                            )
                     } label: {
                         Text(style.title)
                             .foregroundColor(.primary)
@@ -35,7 +31,7 @@ struct HapticsShowroomView: View {
                     }
                 }
             }
-            
+
             Section("Notification haptics") {
                 ForEach(UINotificationFeedbackGenerator.FeedbackType.allCases) { type in
                     Button {
@@ -46,9 +42,13 @@ struct HapticsShowroomView: View {
                     }
                 }
             }
-            
-            Link("Human Interface Guidelines - Haptics",
-                 destination: URL(string: "https://developer.apple.com/design/human-interface-guidelines/ios/user-interaction/haptics/")!
+
+            Link(
+                "Human Interface Guidelines - Haptics",
+                destination: URL(
+                    string:
+                        "https://developer.apple.com/design/human-interface-guidelines/ios/user-interaction/haptics/"
+                )!
             )
         }
     }
@@ -66,3 +66,5 @@ struct HapticsShowroomView_Previews: PreviewProvider {
         }
     }
 }
+
+
